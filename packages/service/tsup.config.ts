@@ -3,12 +3,12 @@ import { defineConfig } from "tsup";
 export default defineConfig({
   dts: true,
   clean: true,
-  splitting: false,
+  splitting: true,
   sourcemap: false,
   minify: false,
-  format: ["esm", "cjs"],
+  format: ["esm"],
   outDir: "dist",
   shims: false,
   entry: ["src/**/*.ts"],
-  bundle: false,
+  bundle: true,
 });

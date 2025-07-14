@@ -2,6 +2,10 @@
   "extends": ["//"],
   "$schema": "https://turbo.build/schema.json",
   "tasks": {
+    "dev": {
+      "dependsOn": ["^build"],
+      "outputs": [".mastra/**"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": [".mastra/**"]
